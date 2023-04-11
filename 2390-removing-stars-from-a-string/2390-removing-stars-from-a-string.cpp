@@ -3,18 +3,13 @@ class Solution
     public:
         string removeStars(string s)
         {
-            string c = "";
-            for (int i = 0; i < s.size(); i++)
-            {
-                if (s[i] == '*')
-                {
-                    c.pop_back();
-                }
-                else
-                {
-                    c += s[i];
-                }
+           string res="";
+            for(int i=0;i<s.size();i++){
+                if(s[i]=='*')
+                    res.pop_back();
+                
+                else res+=s[i];
             }
-            return c;
+            return res;
         }
 };
